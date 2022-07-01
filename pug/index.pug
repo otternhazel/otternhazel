@@ -1,0 +1,232 @@
+doctype html
+html(lang='zh-Hant')
+    // Made by Jamy Lin 2022-06-24
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Little Things | 小飾古董飾品
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+        link(rel='stylesheet' href='public/css/style.css')
+        link(rel="icon" type="image/x-icon" sizes="82x82" href="public/images/favicon.png")
+    body
+        header
+            .container 
+                a.nav-logo(href="/index.html") 
+                    img(src="public/images/logo.png", alt="回首頁") 
+                nav.w-100
+                    .mobile-nav.row
+                        #mobile-cart 
+                            img(src="public/images/icon-bag.png", alt="購物車")
+                        #mobile-fav
+                            img(src="public/images/icon-heart.png", alt="最愛")
+                        .hamburger
+                            span.line
+                            span.line
+                            span.line
+                    ul#burger-menu.row
+                        li 
+                            a(class="nav-icon" href="#") 
+                                img(src="public/images/icon-bell.png", alt="通知")
+                        li 
+                            a(class="nav-icon" href="#") 
+                                img(src="public/images/icon-visitor.png", alt="註冊/登入")
+                        li 
+                            a(href="#") 
+                                img(src="public/images/icon-brand.png", alt="品牌介紹")
+                        li 
+                            a(href="#")
+                                img(src="public/images/icon_search.png", alt="商品搜尋")
+                    ul#pc-nav.row.text-center 
+                        li
+                            a#find-product(href="javascript:;") 
+                                h3 找 尋 飾 品
+                            #submenu
+                                .row
+                                    .col-4.col-md-4.col-lg-4
+                                        dl  
+                                            dt 飾品分類 
+                                            dd 
+                                                a(href="javascript:;") 所有飾品
+                                            dd 
+                                                a(href="javascript:;") 項鍊 
+                                            dd 
+                                                a(href="javascript:;") 耳夾
+                                            dd 
+                                                a(href="javascript:;") 耳針
+                                            dd 
+                                                a(href="javascript:;") 胸針
+                                            dd 
+                                                a(href="javascript:;") 戒指
+                                            dd 
+                                                a(href="javascript:;") 手環 / 鍊
+                                            dd 
+                                                a(href="javascript:;") 吊墜
+                                            dd 
+                                                a(href="javascript:;") 有主之物
+                                    .col-8.col-md-8.col-lg-8
+                                        .trend 
+                                            p 最近搜尋
+                                            .row 
+                                                .keyword 
+                                                    a(href="javascript:;") Monet
+                                                .keyword 
+                                                    a(href="javascript:;") 石榴石
+                                                .keyword 
+                                                    a(href="javascript:;") 耳夾 不痛
+                                                .keyword 
+                                                    a(href="javascript:;") 紋章
+                                            p 熱門搜尋 
+                                            .row 
+                                                .keyword 
+                                                    a(href="javascript:;") 珍珠
+                                                .keyword 
+                                                    a(href="javascript:;") 羽毛
+                                                .keyword 
+                                                    a(href="javascript:;") ArtDeco
+                                                .keyword 
+                                                    a(href="javascript:;") 1950
+                                                .keyword 
+                                                    a(href="javascript:;") 德國製
+                                                .keyword 
+                                                    a(href="javascript:;") 相片墜
+                                                .keyword 
+                                                    a(href="javascript:;") 維多利亞時期
+                                                .keyword 
+                                                    a(href="javascript:;") 滴金玻璃
+                                                .keyword 
+                                                    a(href="javascript:;") 緞帶
+                                                .keyword 
+                                                    a(href="javascript:;") 萊茵石
+                                                .keyword 
+                                                    a(href="javascript:;") 大馬士革
+                                                .keyword 
+                                                    a(href="javascript:;") 翻轉
+                                            .search-box
+                                                input(type="text" placeholder="請輸入商品名稱或關鍵字..." name="search")
+                                                button(type="submit")
+                                                    i(class="fa-solid fa-magnifying-glass")  查詢
+                        li        
+                            a(href="#") 
+                                h3 品 牌 介 紹
+                        li
+                            a(class="nav-icon" href="#") 
+                                img(src="public/images/icon-bell.png", alt="通知")
+                            a(class="nav-icon" href="#") 
+                                img(src="public/images/icon-visitor.png", alt="註冊/登入")
+                            a(class="nav-icon" href="#") 
+                                img(src="public/images/icon-heart.png", alt="最愛")
+                            a(class="nav-icon" href="#") 
+                                img(src="public/images/icon-bag.png", alt="購物車")
+        .banner.text-center
+            a(href="#") 
+                .go-previous
+            a(href="#")     
+                .go-next
+            a(href="#")
+                img.main-img.img-fluid(src="public/images/banners/new-in-this-week.png", alt="")
+        .thumbnails.row
+            .img-box.active    
+                img(src="public/images/thumbnails/new-in-this-week.png", alt="")
+            .img-box    
+                img(src="public/images/thumbnails/go-to-market.png", alt="")
+            .img-box    
+                img(src="public/images/thumbnails/new-service.png", alt="")
+        main
+            .container 
+                .new-arrivals
+                    h2 New Arrivals
+                    .row
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.special-price $11,230
+                                span.original-price.line-through $14,850
+                                span.tag-new new!
+                                span.tag-sold sold
+                            .round
+                                .heart
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.special-price $11,230
+                                span.original-price.line-through $14,850
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.original-price $14,850
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.original-price $14,850
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.original-price $14,850
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.original-price $14,850
+                        .product.col-6.col-md-4.col-lg-3
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.original-price $14,850
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.original-price $14,850
+                        .product.col-6.col-md-4.col-lg-3 
+                            a(href="#")
+                                .img-box
+                                    img.cover-fit(src="public/images/1.jpg", alt="")
+                                span.original-price $14,850
+                .view-all-btn 
+                    a.line-btn-lg(href="#") view all
+        footer 
+            .container
+                .row 
+                    .col-12.col-md-3.col-lg-3
+                        dl 
+                            dt 關於小飾
+                            dd 
+                                a(href="#") 我們的故事
+                            dd 
+                                a(href="#") 古董飾品二三事
+                    .col-12.col-md-3.col-lg-3
+                        dl 
+                            dt 協助
+                            dd 
+                                a(href="#") 如何購買
+                            dd 
+                                a(href="#") 退貨與退款
+                    .col-12.col-md-3.col-lg-3
+                        dl 
+                            dt 飾品交流
+                            dd 
+                                a(href="#") 想找飾品
+                            dd 
+                                a(href="#") 想出售
+                    .footer-icon.col-12.col-md-3.col-lg-3
+                        a(href="#") 
+                            img(src="public/images/icon-fb.png", alt="")
+                        a(href="#") 
+                            img(src="public/images/icon-instagram.png", alt="")
+                        a(href="#") 
+                            img(src="public/images/favicon.png", alt="")
+                .copyright Copyright © JL Dev 2022 僅作為技術學習之用
+        script(
+            src="https://code.jquery.com/jquery-3.6.0.min.js" 
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"
+        )
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+        script(src="public/js/script.js") 
