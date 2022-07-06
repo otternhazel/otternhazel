@@ -7,24 +7,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Little Things | 小飾古董飾品</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="icon" type="image/x-icon" sizes="82x82" href="public/images/favicon.png">
   </head>
   <body>
+    <div class="loading-overlay">
+      <div class="loader"></div>
+    </div>
     <header>
       <div class="container"> <a class="nav-logo" href="/index.html"> <img src="public/images/logo.png" alt="回首頁"></a>
         <nav class="w-100">
           <div class="mobile-nav row">
-            <div id="mobile-cart"> <img src="public/images/icon-bag.png" alt="購物車"></div>
-            <div id="mobile-fav"><img src="public/images/icon-heart.png" alt="最愛"></div>
+            <div id="mobile-cart"> <a href="shopping-cart.html"> <img src="public/images/icon-bag.png" alt="購物車"></a></div>
+            <div id="mobile-fav"><a href="javascript:;"> <img src="public/images/icon-heart.png" alt="最愛"></a></div>
             <div class="hamburger"><span class="line"></span><span class="line"></span><span class="line"></span></div>
           </div>
           <ul class="row" id="burger-menu">
-            <li> <a class="nav-icon" href="#"> <img src="public/images/icon-bell.png" alt="通知"></a></li>
-            <li> <a class="nav-icon" href="#"> <img src="public/images/icon-visitor.png" alt="註冊/登入"></a></li>
-            <li> <a href="#"> <img src="public/images/icon-brand.png" alt="品牌介紹"></a></li>
-            <li> <a href="#"><img src="public/images/icon_search.png" alt="商品搜尋"></a></li>
+            <li> <a class="nav-icon" href="javascript:;"> <img src="public/images/icon-bell.png" alt="通知"></a></li>
+            <li> <a class="nav-icon" href="signIn.html"> <img src="public/images/icon-visitor.png" alt="註冊/登入"></a></li>
+            <li> <a href="brands.html"> <img src="public/images/icon-brand.png" alt="品牌介紹"></a></li>
+            <li> <a id="burger-find-product" href="javascript:;"><img src="public/images/icon_search.png" alt="商品搜尋"></a>
+              <div id="burger-submenu">
+                <div class="row">
+                  <div class="col-4 col-md-4 col-lg-4">
+                    <dl> 
+                      <dt>飾品分類 </dt>
+                      <dd> <a class="light-line" href="javascript:;">所有飾品</a></dd>
+                      <dd> <a class="light-line" href="javascript:;">項鍊 </a></dd>
+                      <dd> <a class="light-line" href="javascript:;">耳夾</a></dd>
+                      <dd> <a class="light-line" href="javascript:;">耳針</a></dd>
+                      <dd> <a class="light-line" href="javascript:;">胸針</a></dd>
+                      <dd> <a class="light-line" href="javascript:;">戒指</a></dd>
+                      <dd> <a class="light-line" href="javascript:;">手環</a></dd>
+                      <dd> <a class="light-line" href="javascript:;">吊墜</a></dd>
+                      <dd> <a class="light-line" href="javascript:;">有主之物</a></dd>
+                    </dl>
+                  </div>
+                  <div class="col-8 col-md-8 col-lg-8">
+                    <div class="trend"> 
+                      <p>最近搜尋</p>
+                      <div class="row"> 
+                        <div class="keyword"> <a href="javascript:;">Monet</a></div>
+                        <div class="keyword"> <a href="javascript:;">石榴石</a></div>
+                        <div class="keyword"> <a href="javascript:;">耳夾 不痛</a></div>
+                        <div class="keyword"> <a href="javascript:;">紋章</a></div>
+                      </div>
+                      <p>熱門搜尋 </p>
+                      <div class="row"> 
+                        <div class="keyword"> <a href="javascript:;">珍珠</a></div>
+                        <div class="keyword"> <a href="javascript:;">羽毛</a></div>
+                        <div class="keyword"> <a href="javascript:;">ArtDeco</a></div>
+                        <div class="keyword"> <a href="javascript:;">1950</a></div>
+                        <div class="keyword"> <a href="javascript:;">德國製</a></div>
+                        <div class="keyword"> <a href="javascript:;">相片墜</a></div>
+                        <div class="keyword"> <a href="javascript:;">維多利亞時期</a></div>
+                        <div class="keyword"> <a href="javascript:;">滴金玻璃</a></div>
+                        <div class="keyword"> <a href="javascript:;">緞帶</a></div>
+                        <div class="keyword"> <a href="javascript:;">萊茵石</a></div>
+                        <div class="keyword"> <a href="javascript:;">大馬士革</a></div>
+                        <div class="keyword"> <a href="javascript:;">翻轉</a></div>
+                      </div>
+                      <div class="search-box">
+                        <input id="search-input" type="text" placeholder="請輸入商品名稱或關鍵字" name="search">
+                        <button type="submit"><i class="fa-solid fa-magnifying-glass"> 查詢</i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
           </ul>
           <ul class="row text-center" id="pc-nav"> 
             <li><a id="find-product" href="javascript:;"> 
@@ -40,7 +91,7 @@
                       <dd> <a href="javascript:;">耳針</a></dd>
                       <dd> <a href="javascript:;">胸針</a></dd>
                       <dd> <a href="javascript:;">戒指</a></dd>
-                      <dd> <a href="javascript:;">手環 / 鍊</a></dd>
+                      <dd> <a href="javascript:;">手環</a></dd>
                       <dd> <a href="javascript:;">吊墜</a></dd>
                       <dd> <a href="javascript:;">有主之物</a></dd>
                     </dl>
@@ -78,9 +129,9 @@
                 </div>
               </div>
             </li>
-            <li>       <a href="#"> 
+            <li>       <a href="brands.html"> 
                 <h3>品 牌 介 紹</h3></a></li>
-            <li><a class="nav-icon" href="#"> <img src="public/images/icon-bell.png" alt="通知"></a><a class="nav-icon" href="#"> <img src="public/images/icon-visitor.png" alt="註冊/登入"></a><a class="nav-icon" href="#"> <img src="public/images/icon-heart.png" alt="最愛"></a><a class="nav-icon" href="#"> <img src="public/images/icon-bag.png" alt="購物車"></a></li>
+            <li><a class="nav-icon" href="javascript:;"> <img src="public/images/icon-bell.png" alt="通知"></a><a class="nav-icon" href="signIn.html"> <img src="public/images/icon-visitor.png" alt="註冊/登入"></a><a class="nav-icon" href="javascript:;"> <img src="public/images/icon-heart.png" alt="最愛"></a><a class="nav-icon" href="shopping-cart.html"> <img src="public/images/icon-bag.png" alt="購物車"></a></li>
           </ul>
         </nav>
       </div>
@@ -95,61 +146,61 @@
     </div>
     <main>
       <div class="container"> 
-        <div class="new-arrivals">
+        <div class="main-title">
           <h2>New Arrivals</h2>
-          <div class="row">
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="special-price">$11,230</span><span class="original-price line-through">$14,850</span><span class="tag-new">new!</span><span class="tag-sold">sold</span></a>
-              <div class="round">
-                <div class="heart"></div>
-              </div>
-            </div>
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="special-price">$11,230</span><span class="original-price line-through">$14,850</span></a></div>
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="original-price">$14,850</span></a></div>
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="original-price">$14,850</span></a></div>
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="original-price">$14,850</span></a></div>
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="original-price">$14,850</span></a></div>
-            <div class="product col-6 col-md-4 col-lg-3"><a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="original-price">$14,850</span></a></div>
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="original-price">$14,850</span></a></div>
-            <div class="product col-6 col-md-4 col-lg-3"> <a href="#">
-                <div class="img-box"><img class="cover-fit" src="public/images/1.jpg" alt=""></div><span class="original-price">$14,850</span></a></div>
-          </div>
         </div>
-        <div class="view-all-btn"> <a class="line-btn-lg" href="#">view all</a></div>
+        <div class="products row">
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/1.png" alt=""></div><span class="special-price">$11,230</span><span class="original-price line-through">$14,850</span><span class="tag-new">new!</span><span class="tag-sold">sold</span></a>
+            <div class="round">
+              <div class="heart"></div>
+            </div>
+          </div>
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/2.png" alt=""></div><span class="special-price">$11,230</span><span class="original-price line-through">$14,850</span></a></div>
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/3.png" alt=""></div><span class="original-price">$14,850</span></a></div>
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/4.png" alt=""></div><span class="original-price">$14,850</span></a></div>
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/5.png" alt=""></div><span class="original-price">$14,850</span></a></div>
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/6.png" alt=""></div><span class="original-price">$14,850</span></a></div>
+          <div class="product col-12 col-md-4 col-lg-3"><a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/7.png" alt=""></div><span class="original-price">$14,850</span></a></div>
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/8.png" alt=""></div><span class="original-price">$14,850</span></a></div>
+          <div class="product col-12 col-md-4 col-lg-3"> <a href="javascript:;">
+              <div class="img-box"><img class="cover-fit" src="public/images/products/9.png" alt=""></div><span class="original-price">$14,850</span></a></div>
+        </div>
       </div>
+      <div class="view-all-btn"> <a class="line-btn-lg" href="javascript:;">view all</a></div>
     </main>
     <footer> 
       <div class="container">
         <div class="row"> 
           <div class="col-12 col-md-3 col-lg-3">
             <dl> 
-              <dt>關於小飾</dt>
-              <dd> <a href="#">我們的故事</a></dd>
-              <dd> <a href="#">古董飾品二三事</a></dd>
+              <dt class="footer-menu-switch">關於小飾</dt>
+              <dd> <a href="our-story.html">我們的故事</a></dd>
+              <dd> <a href="vintage-jewelry.html">古董飾品二三事</a></dd>
             </dl>
           </div>
           <div class="col-12 col-md-3 col-lg-3">
             <dl> 
-              <dt>協助</dt>
-              <dd> <a href="#">如何購買</a></dd>
-              <dd> <a href="#">退貨與退款</a></dd>
+              <dt class="footer-menu-switch">協助</dt>
+              <dd> <a href="javascript:;">如何購買</a></dd>
+              <dd> <a href="javascript:;">退貨與退款</a></dd>
             </dl>
           </div>
           <div class="col-12 col-md-3 col-lg-3">
             <dl> 
-              <dt>飾品交流</dt>
-              <dd> <a href="#">想找飾品</a></dd>
-              <dd> <a href="#">想出售</a></dd>
+              <dt class="footer-menu-switch">飾品交流</dt>
+              <dd> <a href="find-jewelry.html">想找飾品</a></dd>
+              <dd> <a href="sale-jewelry.html">想出售</a></dd>
             </dl>
           </div>
-          <div class="footer-icon col-12 col-md-3 col-lg-3"><a href="#"> <img src="public/images/icon-fb.png" alt=""></a><a href="#"> <img src="public/images/icon-instagram.png" alt=""></a><a href="#"> <img src="public/images/favicon.png" alt=""></a></div>
+          <div class="footer-icon col-12 col-md-3 col-lg-3"><a href="javascript:;"> <img src="public/images/icon-fb.png" alt=""></a><a href="javascript:;"> <img src="public/images/icon-instagram.png" alt=""></a><a href="index.html"> <img src="public/images/favicon.png" alt=""></a></div>
         </div>
         <div class="copyright">Copyright © JL Dev 2022 僅作為技術學習之用</div>
       </div>

@@ -1,4 +1,3 @@
-doctype html
 html(lang='zh-Hant')
     // Made by Jamy Lin 2022-06-24
     head
@@ -10,8 +9,6 @@ html(lang='zh-Hant')
         link(rel='stylesheet' href='public/css/style.css')
         link(rel="icon" type="image/x-icon" sizes="82x82" href="public/images/favicon.png")
     body
-        .loading-overlay
-            .loader
         header
             .container 
                 a.nav-logo(href="/index.html") 
@@ -187,78 +184,15 @@ html(lang='zh-Hant')
                                 img(src="public/images/icon-heart.png", alt="最愛")
                             a.nav-icon(href="shopping-cart.html") 
                                 img(src="public/images/icon-bag.png", alt="購物車")
-        .banner.text-center
-            a(href="#") 
-                .go-previous
-            a(href="#")     
-                .go-next
-            a(href="#")
-                img.main-img.img-fluid(src="public/images/banners/new-in-this-week.png", alt="")
-        .thumbnails.row
-            .img-box.active    
-                img(src="public/images/thumbnails/new-in-this-week.png", alt="")
-            .img-box    
-                img(src="public/images/thumbnails/go-to-market.png", alt="")
-            .img-box    
-                img(src="public/images/thumbnails/new-service.png", alt="")
-        main
+        main 
             .container 
-                .main-title
-                    h2 New Arrivals
-                .products.row
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/1.png", alt="")
-                            span.special-price $11,230
-                            span.original-price.line-through $14,850
-                            span.tag-new new!
-                            span.tag-sold sold
-                        .round
-                            .heart
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/2.png", alt="")
-                            span.special-price $11,230
-                            span.original-price.line-through $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/3.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/4.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/5.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/6.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/7.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/8.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/9.png", alt="")
-                            span.original-price $14,850
-            .view-all-btn 
-                a.line-btn-lg(href="javascript:;") view all
+                .row 
+                    .main-item-image
+                        a(href="javascript:;") 
+                            img(src="", alt="")
+                    .item-image-thumbnails
+                        a(href="javascript:;") 
+                            img(src="", alt="")
         footer 
             .container
                 .row 
@@ -297,4 +231,4 @@ html(lang='zh-Hant')
             crossorigin="anonymous"
         )
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
-        script(src="public/js/script.js") 
+        script(src="public/js/script.js")

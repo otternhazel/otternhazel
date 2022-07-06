@@ -10,8 +10,6 @@ html(lang='zh-Hant')
         link(rel='stylesheet' href='public/css/style.css')
         link(rel="icon" type="image/x-icon" sizes="82x82" href="public/images/favicon.png")
     body
-        .loading-overlay
-            .loader
         header
             .container 
                 a.nav-logo(href="/index.html") 
@@ -187,78 +185,49 @@ html(lang='zh-Hant')
                                 img(src="public/images/icon-heart.png", alt="最愛")
                             a.nav-icon(href="shopping-cart.html") 
                                 img(src="public/images/icon-bag.png", alt="購物車")
-        .banner.text-center
-            a(href="#") 
-                .go-previous
-            a(href="#")     
-                .go-next
-            a(href="#")
-                img.main-img.img-fluid(src="public/images/banners/new-in-this-week.png", alt="")
-        .thumbnails.row
-            .img-box.active    
-                img(src="public/images/thumbnails/new-in-this-week.png", alt="")
-            .img-box    
-                img(src="public/images/thumbnails/go-to-market.png", alt="")
-            .img-box    
-                img(src="public/images/thumbnails/new-service.png", alt="")
         main
-            .container 
-                .main-title
-                    h2 New Arrivals
-                .products.row
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/1.png", alt="")
-                            span.special-price $11,230
-                            span.original-price.line-through $14,850
-                            span.tag-new new!
-                            span.tag-sold sold
-                        .round
-                            .heart
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/2.png", alt="")
-                            span.special-price $11,230
-                            span.original-price.line-through $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/3.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/4.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/5.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/6.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/7.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/8.png", alt="")
-                            span.original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="javascript:;")
-                            .img-box
-                                img.cover-fit(src="public/images/products/9.png", alt="")
-                            span.original-price $14,850
-            .view-all-btn 
-                a.line-btn-lg(href="javascript:;") view all
+            .container
+                #sign-In-Up
+                    .form-container.sign-up-container
+                        form(action="#") 
+                            h1 加入會員
+                            .social-container
+                                a.social(href="javascript:;") 
+                                    i.fab.fa-facebook-f
+                                a.social(href="javascript:;")
+                                    i.fab.fa-google-plus-g
+                                a.social(href="javascript:;")
+                                    i.fab.fa-linkedin-in
+                            span 或用 email 註冊
+                            input(type="email" placeholder="請輸入 Email")
+                            input(type="password" placeholder="請輸入 8-15 位密碼")
+                            input(type="confirm-password" placeholder="請再次輸入密碼")
+                            button 加入
+                    .form-container.sign-in-container
+                        form(action="#")
+                            h1 登入會員
+                            .social-container
+                                a.social(href="javascript:;") 
+                                    i.fab.fa-facebook-f
+                                a.social(href="javascript:;")
+                                    i.fab.fa-google-plus-g
+                                a.social(href="javascript:;")
+                                    i.fab.fa-linkedin-in
+                            span 或用帳號登入
+                            input(type="email" placeholder="請輸入 Email")
+                            input(type="password" placeholder="請輸入密碼")
+                            a(href="javascript:;") 忘記密碼？
+                            button 登入
+                    .overlay-container
+                        .overlay
+                            .overlay-panel.overlay-left
+                                h1 期待你的加入
+                                p 請先加入會員，再使用網站服務
+                                button#signIn.ghost 已有帳號
+                            .overlay-panel.overlay-right
+                                h1 見到你真好
+                                p 開始今天的探索吧
+                                button#signUp.ghost 還不是會員
         footer 
             .container
                 .row 
@@ -297,4 +266,4 @@ html(lang='zh-Hant')
             crossorigin="anonymous"
         )
         script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
-        script(src="public/js/script.js") 
+        script(src="public/js/script.js")
