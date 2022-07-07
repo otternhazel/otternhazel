@@ -191,71 +191,72 @@ html(lang='zh-Hant')
                     .heading.cf
                         h1 我的購物車
                         a.continue(href="javascript:history.back();") 繼續購物
-                    .cart
-                        ul.cartWrap
-                            li.items
-                                .infoWrap
-                                    .cartSection
-                                        img.itemImg(src='public/images/products/1.png' alt='')
-                                        p.itemNumber #QUE-007544-002
-                                        h3 K 金鑲鑽開扣手環
-                                        p
-                                        | NT$4,350 x 
-                                        input.qty(type='text' placeholder='3')
-                                        
-                                        p.stockStatus  有庫存
-                                    .prodTotal.cartSection
-                                        p NT$4,350
-                                    .cartSection.removeWrap
-                                        a.remove(href="javascript:;") x
-                            li.items
-                                .infoWrap
-                                    .cartSection
-                                        img.itemImg(src='public/images/products/2.png' alt='')
-                                        p.itemNumber #Q-003757-011
-                                        h3 Item Name 1
-                                        p
-                                        | NT$2,380 x
-                                        input.qty(type='text' placeholder='3')
-                                        p.stockStatus  有庫存
-                                    .prodTotal.cartSection
-                                        p NT$2,380
-                                    .cartSection.removeWrap
-                                        a.remove(href="javascript:;") x
-                            li.items
-                                .infoWrap
-                                    .cartSection
-                                        img.itemImg(src='public/images/products/3.png' alt='')
-                                        p.itemNumber #Q-003757-012
-                                        h3 Item Name 1
-                                        p
-                                        | NT$3,760 x 
-                                        input.qty(type='text' placeholder='3')
-                                        p.stockStatus.out  已售完
-                                    .prodTotal.cartSection
-                                        p NT$3,760
-                                    .cartSection.removeWrap
-                                        a.remove(href="javascript:;") x
-                            li.items
-                                .infoWrap
-                                    .cartSection.info
-                                        img.itemImg(src='public/images/products/5.png' alt='')
-                                        p.itemNumber #Q-003757-013
-                                        h3 Item Name 1
-                                        p
-                                        | NT$7,720 x 
-                                        input.qty(type='text' placeholder='1')
-                                        p.stockStatus  有庫存
-                                    .prodTotal.cartSection
-                                        p NT$7,720
-                                    .cartSection.removeWrap
-                                        a.remove(href="javascript:;") x
-                    .special
-                        .specialContent 7/30 前滿 3,000 免運!
+                    form(action='')
+                        .cart
+                            ul.cartWrap
+                                li.items
+                                    .infoWrap
+                                        .cartSection
+                                            img.itemImg(src='public/images/products/1.png' alt='')
+                                            p.itemNumber #Q-003757-010
+                                            h3 K 金鑲鑽開扣手環
+                                            p
+                                            | NT$4,350 x 
+                                            input.qty(type='text' placeholder='1')
+                                            
+                                            p.stockStatus  有庫存
+                                        .prodTotal.cartSection
+                                            p NT$4,350
+                                        .cartSection.removeWrap
+                                            a.remove(href="javascript:;") x
+                                li.items
+                                    .infoWrap
+                                        .cartSection
+                                            img.itemImg(src='public/images/products/2.png' alt='')
+                                            p.itemNumber #Q-003757-011
+                                            h3 Item Name 1
+                                            p
+                                            | NT$2,380 x
+                                            input.qty(type='text' placeholder='1')
+                                            p.stockStatus  有庫存
+                                        .prodTotal.cartSection
+                                            p NT$2,380
+                                        .cartSection.removeWrap
+                                            a.remove(href="javascript:;") x
+                                li.items
+                                    .infoWrap
+                                        .cartSection
+                                            img.itemImg(src='public/images/products/3.png' alt='')
+                                            p.itemNumber #Q-003757-012
+                                            h3 Item Name 1
+                                            p
+                                            | NT$3,760 x 
+                                            input.qty(type='text' placeholder='1')
+                                            p.stockStatus.out  已售完
+                                        .prodTotal.cartSection
+                                            p NT$3,760
+                                        .cartSection.removeWrap
+                                            a.remove(href="javascript:;") x
+                                li.items
+                                    .infoWrap
+                                        .cartSection.info
+                                            img.itemImg(src='public/images/products/5.png' alt='')
+                                            p.itemNumber #Q-003757-013
+                                            h3 Item Name 1
+                                            p
+                                            | NT$7,720 x 
+                                            input.qty(type='text' placeholder='1')
+                                            p.stockStatus  有庫存
+                                        .prodTotal.cartSection
+                                            p NT$7,720
+                                        .cartSection.removeWrap
+                                            a.remove(href="javascript:;") x
+                        .special
+                            .specialContent 7/30 前滿 3,000 免運!
                     .promoCode
                         label(for='promo') 選擇折價券或輸入折扣碼
                         .row
-                            input(type='text' name='promo' placholder='請輸入折扣碼')
+                            input(type='text' name='promo' placeholder='請輸入折扣碼')
                             a.btn(href="javascript:;")
                     .subtotal.cf
                         ul
@@ -297,9 +298,9 @@ html(lang='zh-Hant')
                         dl 
                             dt.footer-menu-switch 飾品交流
                             dd 
-                                a(href="find-jewelry.html") 想找飾品
+                                a(href="contact-us.html") 聯絡小飾
                             dd 
-                                a(href="sale-jewelry.html") 想出售
+                                a(href="javascript:;") 常駐市集
                     .footer-icon.col-12.col-md-3.col-lg-3
                         a(href="javascript:;") 
                             img(src="public/images/icon-fb.png", alt="")
@@ -307,7 +308,7 @@ html(lang='zh-Hant')
                             img(src="public/images/icon-instagram.png", alt="")
                         a(href="index.html") 
                             img(src="public/images/favicon.png", alt="")
-                .copyright Copyright © JL Dev 2022 僅作為技術學習之用
+                .copyright Copyright © Jamy Lin Design 2022 僅作為技術學習之用
         script(
             src="https://code.jquery.com/jquery-3.6.0.min.js" 
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="

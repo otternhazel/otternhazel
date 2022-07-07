@@ -1,4 +1,3 @@
-doctype html
 html(lang='zh-Hant')
     // Made by Jamy Lin 2022-06-24
     head
@@ -185,92 +184,75 @@ html(lang='zh-Hant')
                                 img(src="public/images/icon-heart.png", alt="最愛")
                             a.nav-icon(href="shopping-cart.html") 
                                 img(src="public/images/icon-bag.png", alt="購物車")
-        main
+        main 
             .container 
-                .main-title
-                    h2 Napier
-                .main-intro
-                    |Attleboro，美國麻州的一個城市，曾有世界珠寶之都的美名，1875 
-                    |年，古董飾品裡最知名品牌之一 Napier 就從這裡誕生。
-                    br
-                    br
-                    |原先以 Whitney and Rice 的商標發展銀製男士懷錶，1882 年更名為 Carpenter and Bliss，將產線移到了美國康州，往後幾十年事業快速發展。1922 年，改由James Napier 擔任公司負責人，因此推出了同名首飾品牌 Napier。一戰與二戰期間 Napier 都未停下營運的腳步，眼光獨到地重建工廠，開始製作獎牌之類的業務。1950年代，艾森豪執政時期的第一夫人 Mamie Eisenhower 稱 Napier 是最愛的首飾品牌。
-                .products.row
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/item1.png", alt="")
-                            .original-price $3,680
-                        .tag-new new!
-                        .tag-sold sold
-                        .round
-                            .heart
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/1.png", alt="")
-                        .special-price $11,230
-                        .original-price.line-through $14,850
-                        .tag-new new!
-                        .tag-sold sold
-                        .round
-                            .heart
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/2.png", alt="")
-                            .special-price $11,230
-                            .original-price.line-through $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/3.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/4.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/5.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/6.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/7.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/8.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/9.png", alt="")
-                            .original-price $14,850
-                    .page-numbers.row 
-                        .previous-page-btn
-                            a(href="#") <<
-                        .page-number
-                            a(href="#") 1
-                        .page-number
-                            a(href="#") 2
-                        .page-number
-                            a(href="#") 3
-                        .page-number
-                            a(href="#") 4
-                        .page-number
-                            a(href="#") 5
-                        .next-page-btn
-                            a(href="#") >> 
+                .contact-us 
+                    .main-title
+                        h2 聯絡小飾
+                    .wrap-contact
+                        form#survey-form(action='#')
+                            .shop-intro
+                                |古董飾品交流
+                                br
+                                br
+                                |代尋、代購古董飾品
+                                br
+                                br
+                                |飾品保養與維修
+                                br
+                                br
+                                |老件再設計
+                            p
+                            .wrap-input
+                                label#name-label 您的大名 *
+                                input#name.input(type='text' name='name' placeholder='請輸入姓名' required='')
+                            .wrap-input
+                                label#email-label Email *
+                                input#email.input(type='email' name='email' placeholder='請輸入回信 Email' required='')
+                            .wrap-input
+                                label#number-label 聯絡電話 *
+                                input#number.input(type='tel' name='tel-number' min='9' max='10' placeholder='請輸入台灣電話號碼' required='')
+                            .w-full
+                                .wrap-contact-form-radio
+                                label.label-input
+                                    | 怎麼稱呼您
+                                .contact-form-radio
+                                    input.input-radio(type='radio' name='gender' value='Mr' checked='checked')
+                                    label.label-radio
+                                    | Mr
+                                .contact-form-radio
+                                    input.input-radio(type='radio' name='gender' value='Ms')
+                                    label.label-radio
+                                    | Ms
+                                .wrap-contact-form-range
+                                    label.label-input 請選擇您想要的服務
+                                    .contact-form-range-value
+                                        ul
+                                            li.checkbox
+                                                label(for='service')
+                                                input(name='service' value='1' type='checkbox')
+                                                | 尋找飾品
+                                            li.checkbox
+                                                label(for='service')
+                                                input(name='service' value='2' type='checkbox')
+                                                | 維修飾品
+                                            li.checkbox
+                                                label(for='service')
+                                                input(name='service' value='3' type='checkbox')
+                                                | 飾品再設計
+                                            li.checkbox
+                                                label(for='service')
+                                                input(name='service' value='3' type='checkbox')
+                                                | 出售飾品
+                            // Textarea
+                            .wrap-input
+                                label.label-input(for="user-message") 留下您的訊息
+                                textarea.input(name='user-message' placeholder='請在此輸入您的訊息')
+                            // Button
+                            button#submit(type='submit')
+                                | Submit
+                                i.fa.fa-long-arrow-right
+
         footer 
             .container
                 .row 

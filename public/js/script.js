@@ -92,12 +92,10 @@ $(".heart").on("click", function () {
     }) //heart end
 
 
-$(document).ready(function () {
-    $('.hamburger').click(function () {
-        $(this).toggleClass('active');
-        $('#burger-menu').toggleClass('active')
-    });
-})
+$('.hamburger').click(function () {
+    $(this).toggleClass('active');
+    $('#burger-menu').toggleClass('active')
+}) //hamburger end
 
 $(window).resize(function () {
     let viewWidth = $(window).width();
@@ -185,7 +183,6 @@ $(".qt-plus").click(function () {
 });
 
 $(".qt-minus").click(function () {
-
     child = $(this).parent().children(".qt");
 
     if (parseInt(child.html()) > 1) {
@@ -210,3 +207,10 @@ $(".btn").click(function () {
 $(window).on('load', function () {
     $('.loading-overlay').addClass('active')
 })
+
+$('.item-image-thumbnails img').on('click', function (e) {
+    $('.main-item-image img').attr('src', $(this).attr('src'))
+    $('.main-item-image img').parent().attr('href', $(this).attr('src'))
+    $(this).parent().parent().addClass('active')
+    $(this).parent().parent().siblings().removeClass('active')
+}) //item-image-thumbnails end

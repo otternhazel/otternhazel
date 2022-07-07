@@ -135,16 +135,70 @@
     </header>
     <main> 
       <div class="container"> 
-        <div class="brands row">
-          <div class="brand"><a href="brand-products.html">Napier</a></div>
-          <div class="brand"><a href="">Monet</a></div>
-          <div class="brand"><a href="">Monet</a></div>
-          <div class="brand"><a href="">Monet</a></div>
-          <div class="brand"><a href="">Monet</a></div>
-          <div class="brand"><a href="">Monet</a></div>
-          <div class="brand"><a href="">Monet</a></div>
-          <div class="brand"><a href="">Monet</a></div>
-          <div class="brand"><a href="">Monet</a></div>
+        <div class="contact-us"> 
+          <div class="main-title">
+            <h2>聯絡小飾</h2>
+          </div>
+          <div class="wrap-contact">
+            <form id="survey-form" action="#">
+              <div class="shop-intro">古董飾品交流<br/><br/>代尋、代購古董飾品<br/><br/>飾品保養與維修<br/><br/>老件再設計</div>
+              <p></p>
+              <div class="wrap-input">
+                <label id="name-label">您的大名 *</label>
+                <input class="input" id="name" type="text" name="name" placeholder="請輸入姓名" required=""/>
+              </div>
+              <div class="wrap-input">
+                <label id="email-label">Email *</label>
+                <input class="input" id="email" type="email" name="email" placeholder="請輸入回信 Email" required=""/>
+              </div>
+              <div class="wrap-input">
+                <label id="number-label">聯絡電話 *</label>
+                <input class="input" id="number" type="tel" name="tel-number" min="9" max="10" placeholder="請輸入台灣電話號碼" required=""/>
+              </div>
+              <div class="w-full">
+                <div class="wrap-contact-form-radio"></div>
+                <label class="label-input">怎麼稱呼您</label>
+                <div class="contact-form-radio">
+                  <input class="input-radio" type="radio" name="gender" value="Mr" checked="checked"/>
+                  <label class="label-radio"></label>Mr
+                </div>
+                <div class="contact-form-radio">
+                  <input class="input-radio" type="radio" name="gender" value="Ms"/>
+                  <label class="label-radio"></label>Ms
+                </div>
+                <div class="wrap-contact-form-range">
+                  <label class="label-input">請選擇您想要的服務</label>
+                  <div class="contact-form-range-value">
+                    <ul>
+                      <li class="checkbox">
+                        <label for="service"></label>
+                        <input name="service" value="1" type="checkbox"/>尋找飾品
+                      </li>
+                      <li class="checkbox">
+                        <label for="service"></label>
+                        <input name="service" value="2" type="checkbox"/>維修飾品
+                      </li>
+                      <li class="checkbox">
+                        <label for="service"></label>
+                        <input name="service" value="3" type="checkbox"/>飾品再設計
+                      </li>
+                      <li class="checkbox">
+                        <label for="service"></label>
+                        <input name="service" value="3" type="checkbox"/>出售飾品
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- Textarea-->
+              <div class="wrap-input">
+                <label class="label-input" for="user-message">留下您的訊息</label>
+                <textarea class="input" name="user-message" placeholder="請在此輸入您的訊息"></textarea>
+              </div>
+              <!-- Button-->
+              <button id="submit" type="submit">Submit<i class="fa fa-long-arrow-right"></i></button>
+            </form>
+          </div>
         </div>
       </div>
     </main>
