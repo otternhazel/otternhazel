@@ -214,67 +214,66 @@ html(lang='zh-Hant')
                 .main-title
                     h2 New Arrivals
                 .products.row
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/item1.png", alt="")
-                        .slide-up-info
-                            .original-price $3,680
-                            .tag-new new!
-                            .tag-sold sold
-                            .round
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
                                 .heart
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/1.png", alt="")
-                        .special-price $11,230
-                        .original-price.line-through $14,850
-                        .tag-new new!
-                        .tag-sold sold
-                        .round
-                            .heart
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/2.png", alt="")
-                            .special-price $11,230
-                            .original-price.line-through $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/3.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/4.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/5.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/6.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/7.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/8.png", alt="")
-                            .original-price $14,850
-                    .product.col-12.col-md-4.col-lg-3 
-                        a(href="product-detail.html")
-                            .img-box
-                                img.cover-fit(src="public/images/products/9.png", alt="")
-                            .original-price $14,850
+                            img.cover-fit(src="public/images/products/item1.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/1.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/2.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/3.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/4.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/5.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/6.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/7.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/8.png", alt="")
+                    .product.col-6.col-md-4.col-lg-3 
+                        .img-box
+                            .cover
+                                a.more(href="product-detail.html") 查看
+                                .heart
+                            img.cover-fit(src="public/images/products/9.png", alt="")
             .view-all-btn 
                 a.line-btn-lg(href="javascript:;") view all
         footer 
@@ -282,21 +281,27 @@ html(lang='zh-Hant')
                 .row 
                     .col-12.col-md-3.col-lg-3
                         dl 
-                            dt.footer-menu-switch 關於小飾
+                            dt.footer-menu-switch 
+                                | 關於小飾 
+                                i.fa-solid.fa-chevron-down
                             dd 
                                 a(href="our-story.html") 我們的故事
                             dd 
                                 a(href="vintage-jewelry.html") 古董飾品二三事
                     .col-12.col-md-3.col-lg-3
                         dl 
-                            dt.footer-menu-switch 協助
+                            dt.footer-menu-switch 
+                                | 協助 
+                                i.fa-solid.fa-chevron-down
                             dd 
                                 a(href="javascript:;") 如何購買
                             dd 
                                 a(href="javascript:;") 退貨與退款
                     .col-12.col-md-3.col-lg-3
                         dl 
-                            dt.footer-menu-switch 飾品交流
+                            dt.footer-menu-switch 
+                                | 飾品交流 
+                                i.fa-solid.fa-chevron-down
                             dd 
                                 a(href="contact-us.html") 聯絡小飾
                             dd 
