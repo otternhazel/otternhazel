@@ -624,6 +624,8 @@ todo .trend>.search-box>input:focus {
     box-sizing: border-box;
     margin: 10px;
     text-align: center;
+    background-image: url("/public/images/brand-bg.png");
+    background-repeat: no-repeat round;
 }
 
 .brand>a {
@@ -716,18 +718,31 @@ todo .trend>.search-box>input:focus {
     margin-bottom: 20px;
 }
 
-.product img {
-    transition: all 1.2s ease-in-out;
+.slide-up-info {
+    width: 100%;
+    top: 100%;
+    position: absolute;
+    transition: all .3s ease-out;
+    background: rgba($color: #fff, $alpha: .3);
+    height: 100%;
 }
+
+.product:hover>.slide-up-info {
+    top: 0;
+}
+
+// .product img {
+//     transition: all 1.2s ease-in-out;
+// }
 
 .product .img-box {
     margin-bottom: 5px;
     overflow: hidden;
 }
 
-.product .img-box:hover img {
-    transform: scale(1.3);
-}
+// .product .img-box:hover img {
+//     transform: scale(1.3);
+// }
 
 .special-price {
     color: #e75b10;
@@ -1504,7 +1519,7 @@ footer .copyright {
 
     a.btn {
         width: 15%;
-        padding: .4em 0;
+        padding: 0;
         text-align: center;
         border: 1px solid $btn-color;
 
@@ -1678,13 +1693,13 @@ footer .copyright {
 .item-image-thumbnails .item-image-frame {
     overflow: hidden;
     cursor: pointer;
-    border: 3px solid $bg-color;
+    border: 4px solid $bg-color;
     box-sizing: border-box;
 }
 
 .item-image-thumbnails .item-image-frame.active {
-    border: 3px solid #fff;
-    box-shadow: 15px 8px 20px #fff;
+    border: 4px solid #fff;
+    box-shadow: 15px 10px 20px #fff;
 }
 
 .item-image-thumbnails img {

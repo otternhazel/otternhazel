@@ -47,23 +47,35 @@ html(lang='zh-Hant')
                                         dl  
                                             dt 飾品分類 
                                             dd 
-                                                a.light-line(href="javascript:;") 所有飾品
+                            #burger-submenu
+                                .row
+                                    .col-4.col-md-4.col-lg-4
+                                        dl  
+                                            dt 飾品分類 
                                             dd 
-                                                a.light-line(href="javascript:;") 項鍊 
+                            #burger-submenu
+                                .row
+                                    .col-4.col-md-4.col-lg-4
+                                        dl  
+                                            dt 飾品分類 
                                             dd 
-                                                a.light-line(href="javascript:;") 耳夾
+                                                a.light-line(href="all-products.html") 所有飾品
                                             dd 
-                                                a.light-line(href="javascript:;") 耳針
+                                                a.light-line(href="all-products.html") 項鍊 
                                             dd 
-                                                a.light-line(href="javascript:;") 胸針
+                                                a.light-line(href="all-products.html") 耳夾
                                             dd 
-                                                a.light-line(href="javascript:;") 戒指
+                                                a.light-line(href="all-products.html") 耳針
                                             dd 
-                                                a.light-line(href="javascript:;") 手環
+                                                a.light-line(href="all-products.html") 胸針
                                             dd 
-                                                a.light-line(href="javascript:;") 吊墜
+                                                a.light-line(href="all-products.html") 戒指
                                             dd 
-                                                a.light-line(href="javascript:;") 有主之物
+                                                a.light-line(href="all-products.html") 手環
+                                            dd 
+                                                a.light-line(href="all-products.html") 吊墜
+                                            dd 
+                                                a.light-line(href="all-products.html") 有主之物
                                     .col-8.col-md-8.col-lg-8
                                         .trend 
                                             p 最近搜尋
@@ -116,23 +128,23 @@ html(lang='zh-Hant')
                                         dl  
                                             dt 飾品分類 
                                             dd 
-                                                a(href="javascript:;") 所有飾品
+                                                a(href="all-products.html") 所有飾品
                                             dd 
-                                                a(href="javascript:;") 項鍊 
+                                                a(href="all-products.html") 項鍊 
                                             dd 
-                                                a(href="javascript:;") 耳夾
+                                                a(href="all-products.html") 耳夾
                                             dd 
-                                                a(href="javascript:;") 耳針
+                                                a(href="all-products.html") 耳針
                                             dd 
-                                                a(href="javascript:;") 胸針
+                                                a(href="all-products.html") 胸針
                                             dd 
-                                                a(href="javascript:;") 戒指
+                                                a(href="all-products.html") 戒指
                                             dd 
-                                                a(href="javascript:;") 手環
+                                                a(href="all-products.html") 手環
                                             dd 
-                                                a(href="javascript:;") 吊墜
+                                                a(href="all-products.html") 吊墜
                                             dd 
-                                                a(href="javascript:;") 有主之物
+                                                a(href="all-products.html") 有主之物
                                     .col-8.col-md-8.col-lg-8
                                         .trend 
                                             p 最近搜尋
@@ -188,10 +200,6 @@ html(lang='zh-Hant')
                             a.nav-icon(href="shopping-cart.html") 
                                 img(src="public/images/icon-bag.png", alt="購物車")
         .banner.text-center
-            a(href="#") 
-                .go-previous
-            a(href="#")     
-                .go-next
             a(href="#")
                 img.main-img.img-fluid(src="public/images/banners/new-in-this-week.png", alt="")
         .thumbnails.row
@@ -210,11 +218,12 @@ html(lang='zh-Hant')
                         a(href="product-detail.html")
                             .img-box
                                 img.cover-fit(src="public/images/products/item1.png", alt="")
+                        .slide-up-info
                             .original-price $3,680
-                        .tag-new new!
-                        .tag-sold sold
-                        .round
-                            .heart
+                            .tag-new new!
+                            .tag-sold sold
+                            .round
+                                .heart
                     .product.col-12.col-md-4.col-lg-3 
                         a(href="product-detail.html")
                             .img-box

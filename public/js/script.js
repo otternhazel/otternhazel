@@ -92,6 +92,11 @@ $(".heart").on("click", function () {
     }) //heart end
 
 
+$('.product').hover(function () {
+    $(this).children('.product-info-slider').toggleClass('closed');
+}) //product end
+
+
 $('.hamburger').click(function () {
     $(this).toggleClass('active');
     $('#burger-menu').toggleClass('active')
@@ -163,11 +168,7 @@ $(".remove").click(function () {
             el.parent().parent().slideUp('fast', function () {
                 el.parent().parent().parent().remove();
                 if ($(".product").length == 0) {
-                    if (check) {
-                        $("#cart").html("<h1>The shop does not function, yet!</h1><p>If you liked my shopping cart, please take a second and heart this Pen on <a href='https://codepen.io/ziga-miklic/pen/xhpob'>CodePen</a>. Thank you!</p>");
-                    } else {
-                        $("#cart").html("<h1>請先加入商品</h1>");
-                    }
+                    if (check) {} else {}
                 }
                 changeTotal();
             });
