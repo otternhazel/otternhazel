@@ -865,6 +865,10 @@ footer dt {
   letter-spacing: 3px;
 }
 
+footer i.fa {
+  display: none;
+}
+
 footer dd {
   letter-spacing: 2px;
   margin-bottom: 10px;
@@ -913,8 +917,12 @@ footer .copyright {
     width: 100%;
   }
 
+  footer dt i {
+    display: inline;
+  }
+
   footer dd {
-    display: none;
+    display: inline;
   }
 
   footer .footer-icon {
