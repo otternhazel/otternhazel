@@ -572,7 +572,7 @@ todo .trend > .search-box > input:focus {
   box-sizing: border-box;
   margin: 10px;
   text-align: center;
-  background-image: url("/public/images/brand-bg.png");
+  background-image: url("../images/brand-bg.png");
   background-repeat: no-repeat round;
 }
 
@@ -1680,6 +1680,14 @@ footer .copyright {
 .shopping-cart .subtotal .totalRow .value {
   letter-spacing: -0.025em;
   width: 35%;
+}
+
+.shopping-cart .promoCode input {
+  margin: 0;
+}
+
+.shopping-cart .promoCode a.btn {
+  padding-top: 5px;
 }
 
 @media only screen and (max-width: 39.375em) {

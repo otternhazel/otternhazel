@@ -13,7 +13,7 @@ html(lang='zh-Hant')
             .loader
         header
             .container 
-                a.nav-logo(href="/index.html") 
+                a.nav-logo(href="index.html") 
                     img(src="public/images/logo.png", alt="回首頁") 
                 nav.w-100
                     .mobile-nav.row
@@ -220,38 +220,37 @@ html(lang='zh-Hant')
                             .wrap-input
                                 label#number-label 聯絡電話 *
                                 input#number.input(type='tel' name='tel-number' min='9' max='10' placeholder='請輸入台灣電話號碼' required='')
-                            .w-full
-                                .wrap-contact-form-radio
-                                label.label-input
-                                    | 怎麼稱呼您
-                                .contact-form-radio
-                                    input.input-radio(type='radio' name='gender' value='Mr' checked='checked')
-                                    label.label-radio
-                                    | Mr
-                                .contact-form-radio
-                                    input.input-radio(type='radio' name='gender' value='Ms')
-                                    label.label-radio
-                                    | Ms
-                                .wrap-contact-form-range
-                                    label.label-input 請選擇您想要的服務
-                                    .contact-form-range-value
-                                        ul
-                                            li.checkbox
-                                                label(for='service')
-                                                input(name='service' value='1' type='checkbox')
-                                                | 尋找飾品
-                                            li.checkbox
-                                                label(for='service')
-                                                input(name='service' value='2' type='checkbox')
-                                                | 維修飾品
-                                            li.checkbox
-                                                label(for='service')
-                                                input(name='service' value='3' type='checkbox')
-                                                | 飾品再設計
-                                            li.checkbox
-                                                label(for='service')
-                                                input(name='service' value='3' type='checkbox')
-                                                | 出售飾品
+                            .wrap-contact-form-radio
+                            label.label-input
+                                | 怎麼稱呼您
+                            .contact-form-radio
+                                input.input-radio(type='radio' name='gender' value='Mr' checked='checked')
+                                label.label-radio
+                                | Mr
+                            .contact-form-radio
+                                input.input-radio(type='radio' name='gender' value='Ms')
+                                label.label-radio
+                                | Ms
+                            .wrap-contact-form-range
+                                label.label-input 請選擇您想要的服務
+                                .contact-form-range-value
+                                    ul
+                                        li.checkbox
+                                            label(for='service')
+                                            input(name='service' value='1' type='checkbox')
+                                            | 尋找飾品
+                                        li.checkbox
+                                            label(for='service')
+                                            input(name='service' value='2' type='checkbox')
+                                            | 維修飾品
+                                        li.checkbox
+                                            label(for='service')
+                                            input(name='service' value='3' type='checkbox')
+                                            | 飾品再設計
+                                        li.checkbox
+                                            label(for='service')
+                                            input(name='service' value='3' type='checkbox')
+                                            | 出售飾品
                             // Textarea
                             .wrap-input
                                 label.label-input(for="user-message") 留下您的訊息
