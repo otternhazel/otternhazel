@@ -1026,7 +1026,7 @@ footer dt {
     letter-spacing: 3px;
 }
 
-footer i.fa {
+footer i.fa-solid {
     display: none;
 }
 
@@ -1085,12 +1085,12 @@ footer .copyright {
         width: 100%;
     }
 
-    footer dt i {
+    footer dt i.fa-solid {
         display: inline;
     }
 
     footer dd {
-        display: inline;
+        display: none;
     }
 
     footer .footer-icon {

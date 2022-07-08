@@ -11,6 +11,9 @@
     <link rel="icon" type="image/x-icon" sizes="82x82" href="public/images/favicon.png">
   </head>
   <body>
+    <div class="loading-overlay">
+      <div class="loader"></div>
+    </div>
     <header>
       <div class="container"> <a class="nav-logo" href="/index.html"> <img src="public/images/logo.png" alt="回首頁"></a>
         <nav class="w-100">
@@ -147,9 +150,10 @@
       <div class="container">
         <div id="sign-In-Up">
           <div class="form-container sign-up-container">
-            <form action="#"> 
+            <form id="main" action="#"> 
               <h1>加入會員</h1>
               <div class="social-container"><a class="social" href="javascript:;"> <i class="fab fa-facebook-f"></i></a><a class="social" href="javascript:;"><i class="fab fa-google-plus-g"></i></a><a class="social" href="javascript:;"><i class="fab fa-linkedin-in"></i></a></div><span>或用 email 註冊</span>
+              <label for="email"></label>
               <input type="email" placeholder="請輸入 Email">
               <input type="password" placeholder="請輸入 8-15 位密碼">
               <input type="password" placeholder="請再次輸入密碼">

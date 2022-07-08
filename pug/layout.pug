@@ -1,0 +1,250 @@
+doctype html
+html(lang='zh-Hant')
+    // Made by Jamy Lin 2022-06-24
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Little Things | 小飾古董飾品
+        link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css')
+        link(rel='stylesheet' href='public/css/style.css')
+        link(rel="icon" type="image/x-icon" sizes="82x82" href="public/images/favicon.png")
+    body
+        block loading
+            .loading-overlay
+                .loader
+            header
+                .container 
+                    a.nav-logo(href="/index.html") 
+                        img(src="public/images/logo.png", alt="回首頁") 
+                    nav.w-100
+                        .mobile-nav.row
+                            #mobile-cart 
+                                a(href="shopping-cart.html") 
+                                    img(src="public/images/icon-bag.png", alt="購物車")
+                            #mobile-fav
+                                a(href="javascript:;") 
+                                    img(src="public/images/icon-heart.png", alt="最愛")
+                            .hamburger
+                                span.line
+                                span.line
+                                span.line
+                        ul#burger-menu.row
+                            li 
+                                a(class="nav-icon" href="javascript:;") 
+                                    img(src="public/images/icon-bell.png", alt="通知")
+                            li 
+                                a(class="nav-icon" href="signIn.html") 
+                                    img(src="public/images/icon-visitor.png", alt="註冊/登入")
+                            li 
+                                a(href="brands.html") 
+                                    img(src="public/images/icon-brand.png", alt="品牌介紹")
+                            li 
+                                a#burger-find-product(href="javascript:;")
+                                    img(src="public/images/icon_search.png", alt="商品搜尋")
+                                #burger-submenu
+                                    .row
+                                        .col-4.col-md-4.col-lg-4
+                                            dl  
+                                                dt 飾品分類 
+                                                dd 
+                                #burger-submenu
+                                    .row
+                                        .col-4.col-md-4.col-lg-4
+                                            dl  
+                                                dt 飾品分類 
+                                                dd 
+                                #burger-submenu
+                                    .row
+                                        .col-4.col-md-4.col-lg-4
+                                            dl  
+                                                dt 飾品分類 
+                                                dd 
+                                                    a.light-line(href="all-products.html") 所有飾品
+                                                dd 
+                                                    a.light-line(href="all-products.html") 項鍊 
+                                                dd 
+                                                    a.light-line(href="all-products.html") 耳夾
+                                                dd 
+                                                    a.light-line(href="all-products.html") 耳針
+                                                dd 
+                                                    a.light-line(href="all-products.html") 胸針
+                                                dd 
+                                                    a.light-line(href="all-products.html") 戒指
+                                                dd 
+                                                    a.light-line(href="all-products.html") 手環
+                                                dd 
+                                                    a.light-line(href="all-products.html") 吊墜
+                                                dd 
+                                                    a.light-line(href="all-products.html") 有主之物
+                                        .col-8.col-md-8.col-lg-8
+                                            .trend 
+                                                p 最近搜尋
+                                                .row 
+                                                    .keyword 
+                                                        a(href="javascript:;") Monet
+                                                    .keyword 
+                                                        a(href="javascript:;") 石榴石
+                                                    .keyword 
+                                                        a(href="javascript:;") 耳夾 不痛
+                                                    .keyword 
+                                                        a(href="javascript:;") 紋章
+                                                p 熱門搜尋 
+                                                .row 
+                                                    .keyword 
+                                                        a(href="javascript:;") 珍珠
+                                                    .keyword 
+                                                        a(href="javascript:;") 羽毛
+                                                    .keyword 
+                                                        a(href="javascript:;") ArtDeco
+                                                    .keyword 
+                                                        a(href="javascript:;") 1950
+                                                    .keyword 
+                                                        a(href="javascript:;") 德國製
+                                                    .keyword 
+                                                        a(href="javascript:;") 相片墜
+                                                    .keyword 
+                                                        a(href="javascript:;") 維多利亞時期
+                                                    .keyword 
+                                                        a(href="javascript:;") 滴金玻璃
+                                                    .keyword 
+                                                        a(href="javascript:;") 緞帶
+                                                    .keyword 
+                                                        a(href="javascript:;") 萊茵石
+                                                    .keyword 
+                                                        a(href="javascript:;") 大馬士革
+                                                    .keyword 
+                                                        a(href="javascript:;") 翻轉
+                                                .search-box
+                                                    input#search-input(type="text" placeholder="請輸入商品名稱或關鍵字" name="search")
+                                                    button(type="submit")
+                                                        i(class="fa-solid fa-magnifying-glass")  查詢
+                        ul#pc-nav.row.text-center 
+                            li
+                                a#find-product(href="javascript:;") 
+                                    h3 找 尋 飾 品
+                                #submenu
+                                    .row
+                                        .col-4.col-md-4.col-lg-4
+                                            dl  
+                                                dt 飾品分類 
+                                                dd 
+                                                    a(href="all-products.html") 所有飾品
+                                                dd 
+                                                    a(href="all-products.html") 項鍊 
+                                                dd 
+                                                    a(href="all-products.html") 耳夾
+                                                dd 
+                                                    a(href="all-products.html") 耳針
+                                                dd 
+                                                    a(href="all-products.html") 胸針
+                                                dd 
+                                                    a(href="all-products.html") 戒指
+                                                dd 
+                                                    a(href="all-products.html") 手環
+                                                dd 
+                                                    a(href="all-products.html") 吊墜
+                                                dd 
+                                                    a(href="all-products.html") 有主之物
+                                        .col-8.col-md-8.col-lg-8
+                                            .trend 
+                                                p 最近搜尋
+                                                .row 
+                                                    .keyword 
+                                                        a(href="javascript:;") Monet
+                                                    .keyword 
+                                                        a(href="javascript:;") 石榴石
+                                                    .keyword 
+                                                        a(href="javascript:;") 耳夾 不痛
+                                                    .keyword 
+                                                        a(href="javascript:;") 紋章
+                                                p 熱門搜尋 
+                                                .row 
+                                                    .keyword 
+                                                        a(href="javascript:;") 珍珠
+                                                    .keyword 
+                                                        a(href="javascript:;") 羽毛
+                                                    .keyword 
+                                                        a(href="javascript:;") ArtDeco
+                                                    .keyword 
+                                                        a(href="javascript:;") 1950
+                                                    .keyword 
+                                                        a(href="javascript:;") 德國製
+                                                    .keyword 
+                                                        a(href="javascript:;") 相片墜
+                                                    .keyword 
+                                                        a(href="javascript:;") 維多利亞時期
+                                                    .keyword 
+                                                        a(href="javascript:;") 滴金玻璃
+                                                    .keyword 
+                                                        a(href="javascript:;") 緞帶
+                                                    .keyword 
+                                                        a(href="javascript:;") 萊茵石
+                                                    .keyword 
+                                                        a(href="javascript:;") 大馬士革
+                                                    .keyword 
+                                                        a(href="javascript:;") 翻轉
+                                                .search-box
+                                                    input(type="text" placeholder="請輸入商品名稱或關鍵字..." name="search")
+                                                    button(type="submit")
+                                                        i(class="fa-solid fa-magnifying-glass")  查詢
+                            li        
+                                a(href="brands.html") 
+                                    h3 品 牌 介 紹
+                            li
+                                a.nav-icon(href="javascript:;") 
+                                    img(src="public/images/icon-bell.png", alt="通知")
+                                a.nav-icon(href="signIn.html") 
+                                    img(src="public/images/icon-visitor.png", alt="註冊/登入")
+                                a.nav-icon(href="javascript:;") 
+                                    img(src="public/images/icon-heart.png", alt="最愛")
+                                a.nav-icon(href="shopping-cart.html") 
+                                    img(src="public/images/icon-bag.png", alt="購物車")
+        block main
+        block footer    
+            footer 
+                .container
+                    .row 
+                        .col-12.col-md-3.col-lg-3
+                            dl 
+                                dt.footer-menu-switch 
+                                    | 關於小飾 
+                                    i.fa-solid.fa-chevron-down
+                                dd 
+                                    a(href="our-story.html") 我們的故事
+                                dd 
+                                    a(href="vintage-jewelry.html") 古董飾品二三事
+                        .col-12.col-md-3.col-lg-3
+                            dl 
+                                dt.footer-menu-switch 
+                                    | 協助 
+                                    i.fa-solid.fa-chevron-down
+                                dd 
+                                    a(href="javascript:;") 如何購買
+                                dd 
+                                    a(href="javascript:;") 退貨與退款
+                        .col-12.col-md-3.col-lg-3
+                            dl 
+                                dt.footer-menu-switch 
+                                    | 飾品交流 
+                                    i.fa-solid.fa-chevron-down
+                                dd 
+                                    a(href="contact-us.html") 聯絡小飾
+                                dd 
+                                    a(href="javascript:;") 常駐市集
+                        .footer-icon.col-12.col-md-3.col-lg-3
+                            a(href="javascript:;") 
+                                img(src="public/images/icon-fb.png", alt="")
+                            a(href="javascript:;") 
+                                img(src="public/images/icon-instagram.png", alt="")
+                            a(href="index.html") 
+                                img(src="public/images/favicon.png", alt="")
+                    .copyright Copyright © Jamy Lin Design 2022 僅作為技術學習之用
+        block scripts
+            script(
+                src="https://code.jquery.com/jquery-3.6.0.min.js" 
+                integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+                crossorigin="anonymous"
+            )
+            script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js")
+            script(src="public/js/script.js") 
